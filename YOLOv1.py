@@ -7,10 +7,10 @@ from ultralytics import YOLO
 # 경로 설정
 script_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(script_dir)
-model_path = os.path.abspath(os.path.join(script_dir, "../00_Models/yolov8m.pt"))
+model_path = os.path.abspath(os.path.join(script_dir, "../00_Models/yolov12m.pt"))
 video_path = os.path.abspath(os.path.join(script_dir, "../00_Sample_video/input/road.mp4"))
 
-video_out_path = os.path.abspath(os.path.join(script_dir, "../00_Sample_video/output/outputv8.mp4"))
+video_out_path = os.path.abspath(os.path.join(script_dir, "../00_Sample_video/output/outputv12.mp4"))
 
 # YOLO 모델 로드 (GPU 사용: 모델을 CUDA로 이동)
 model = YOLO(model_path)
@@ -63,10 +63,10 @@ while True:
     curr_time = time.time()
     fps = 1 / (curr_time - prev_time)
     prev_time = curr_time
-    cv2.putText(frame, f"YOLO v8 FPS: {int(fps)}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3)
+    cv2.putText(frame, f"YOLO v12 FPS: {int(fps)}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3)
 
     # 결과 영상 실시간 표출 및 MP4 파일로 저장
-    cv2.imshow("YOLO v8 Object Detection", frame)
+    cv2.imshow("YOLO v12 Object Detection", frame)
     out.write(frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
