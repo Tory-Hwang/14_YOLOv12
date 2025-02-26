@@ -1,6 +1,5 @@
 # --------------------------------------------------------
-# Based on yolov10
-# https://github.com/THU-MIG/yolov10/app.py
+# Based on yolov12
 # --------------------------------------------------------'
 
 import gradio as gr
