@@ -1,6 +1,6 @@
 # YOLOv12: Attention-Centric Real-Time Object Detectors 
 - YOLOv12
-- Attention 메커니즘을 YOLO 프레임워크에 전면 도입하면서도, CNN 수준의 실시간 속도를 유지함으로써 기존의 YOLO 모델의 단점을 해결
+- Attention 메커니즘을 YOLO 프레임워크에 전면 도입하면서도, 평균 mAP는 증가하고 CNN 수준의 실시간 속도를 유지함으로써 기존의 YOLO 모델의 단점을 해결
 - 참조 사이트 : https://blog.naver.com/tory0405/223774875003
 
 ![image](https://github.com/user-attachments/assets/1728d35f-6cee-48a6-ad6b-f00140e57acf)
